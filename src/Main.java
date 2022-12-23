@@ -1,3 +1,5 @@
+import Examples.*;
+
 public class Main
 {
     static Example example = new Example();
