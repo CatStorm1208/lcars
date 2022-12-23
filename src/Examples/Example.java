@@ -16,14 +16,16 @@ public class Example
     {
         f.setExtendedState(JFrame.MAXIMIZED_BOTH);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.getContentPane().setBackground(Color.black);
         f.setLayout(null);
         f.setVisible(true);
-        b.setBounds((f.getWidth() - 200)/2,(f.getHeight() - 80)/2 ,100, 40);
-        b.setText("Sussy");
+        b.setBackground(Color.black);
+        b.setBorder(BorderFactory.createEmptyBorder());
+        b.setBounds((f.getWidth() - 360)/2,(f.getHeight() - 130)/2 ,180, 70);
         b.addActionListener(new ExampleAction());
         try
         {
-            img = ImageIO.read(Objects.requireNonNull(getClass().getResource("ExampleImage.png")));
+            img = ImageIO.read(Objects.requireNonNull(getClass().getResource("Sussylcars.png")));
             b.setIcon(new ImageIcon(img));
         }
         catch (IOException e)
