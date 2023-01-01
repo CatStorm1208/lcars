@@ -1,11 +1,9 @@
-import Examples.*;
-
 public class Main
 {
-    static Example example = new Example();
+    static App app = new App();
 
     public static void main(String[] args)
     {
-        example.main();
+        app.main();
     }
 }
