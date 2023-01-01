@@ -23,7 +23,6 @@ public class App
         sussyButton();
         stardateDisplay();
         f.add(starDateText);
-        //f.add(b);
     }
 
     void sussyButton()
@@ -45,9 +44,12 @@ public class App
 
     void stardateDisplay()
     {
-        starDateText.setText(stardate.toString());
+        //TODO implement font
+        //TODO copyright symbol for used font
+        starDateText.setText(Integer.toString(stardate.stardate()));
         starDateText.setBorder(BorderFactory.createEmptyBorder());
         starDateText.setBackground(Color.black);
+        starDateText.setForeground(new Color(255, 204, 102));
         starDateText.setBounds((f.getWidth() - 180)/2,(f.getHeight() - 70)/2, 180, 70);
     }
 }
