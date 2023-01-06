@@ -7,6 +7,6 @@ public class ExampleAction implements ActionListener
 {
     public void actionPerformed(ActionEvent e)
     {
-        System.out.println("Sussy");
+        System.out.println("Test");
     }
 }

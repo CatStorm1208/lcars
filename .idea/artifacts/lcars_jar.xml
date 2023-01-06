@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lcars:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lcars_jar</output-path>
+    <root id="archive" name="lcars.jar">
+      <element id="module-output" name="lcars" />
+    </root>
+  </artifact>
+</component>
