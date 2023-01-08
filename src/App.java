@@ -37,7 +37,6 @@ public class App
 
     void stardateDisplay()
     {
-        //TODO copyright symbol for used font
         starDateText.setFont(new Font("LCARSGTJ3", Font.PLAIN, 32));
         starDateText.setText(Integer.toString(stardate.stardate()));
         starDateText.setBorder(BorderFactory.createEmptyBorder());
