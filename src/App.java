@@ -1,5 +1,4 @@
 import Examples.Example;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,6 +8,7 @@ import java.awt.event.ActionListener;
 public class App
 {
     public static JFrame f = new JFrame();
+    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     JButton b = new JButton();
     JTextField starDateText = new JTextField();
     JTextField copyrightText = new JTextField();
@@ -16,6 +16,7 @@ public class App
 
     public void main()
     {
+        //TODO: better coordinates
         f.setExtendedState(JFrame.MAXIMIZED_BOTH);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.getContentPane().setBackground(Color.black);
@@ -33,6 +34,9 @@ public class App
         f.add(copyrightText);
         //f.add(b);
         f.revalidate();
+        f.revalidate();
+        f.revalidate();
+        f.revalidate();
     }
 
     void stardateDisplay()
@@ -41,20 +45,19 @@ public class App
         starDateText.setText(Integer.toString(stardate.stardate()));
         starDateText.setBorder(BorderFactory.createEmptyBorder());
         starDateText.setBackground(Color.black);
-        starDateText.setForeground(new Color(255, 204, 102));
-        starDateText.setBounds((f.getWidth())/2,(f.getHeight())/2, 180, 70);
+        starDateText.setForeground(new Color(255, 204, 102, 255));
+        copyrightText.setBounds((int)Math.round(screenSize.getWidth()/2), (int)Math.round(screenSize.getHeight()/2),200, copyrightText.getFont().getSize());
         starDateText.setVisible(true);
     }
 
     void copyrightDisplay()
     {
-        //TODO copyright symbol for used font
-        copyrightText.setFont(new Font("LCARSGTJ3", Font.PLAIN, 16));
+        copyrightText.setFont(new Font("LCARSGTJ3", Font.PLAIN, 24));
         copyrightText.setText("Font © gtjlcars.de");
         copyrightText.setBorder(BorderFactory.createEmptyBorder());
         copyrightText.setBackground(Color.black);
-        copyrightText.setForeground(new Color(255, 204, 102));
-        copyrightText.setBounds((f.getWidth())/2,(f.getHeight())/2-1, 180, 70);
+        copyrightText.setForeground(new Color(255, 204, 102, 255));
+        copyrightText.setBounds(0, 0,200, copyrightText.getFont().getSize());
         copyrightText.setVisible(true);
     }
 }
