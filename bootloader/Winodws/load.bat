@@ -1,1 +1,0 @@
-"C:\Program Files\lcars\jdk17.0.5_8\bin\java.exe" -jar lcars.jar

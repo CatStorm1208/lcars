@@ -34,9 +34,6 @@ public class App
         f.add(copyrightText);
         //f.add(b);
         f.revalidate();
-        f.revalidate();
-        f.revalidate();
-        f.revalidate();
     }
 
     void stardateDisplay()
